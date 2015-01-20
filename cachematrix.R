@@ -28,7 +28,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## cacheSolve take in parameter the object (list) created by 
-## makeCacheMatrix. Retreive the 
+## makeCacheMatrix. Retreive the result from cache if present
+## calculate it and store it otherwise
 cacheSolve <- function(x, ...) {
 	## Get inverse matrix from object 
 	m <- x$getinvertedmatrix()
